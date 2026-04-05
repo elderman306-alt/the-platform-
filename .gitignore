@@ -1,0 +1,39 @@
+# Secrets and Credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Dependency directories
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Secrets - NEVER commit these
+secrets.yaml
+credentials.json
+*.secret

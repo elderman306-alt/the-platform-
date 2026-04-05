@@ -1,0 +1,37 @@
+# Security-related Docker ignores
+# Prevent sensitive files in Docker builds
+
+# Secrets and keys
+*.pem
+*.key
+*.p12
+*.keystore
+*.jks
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Credentials
+credentials.json
+secrets.yaml
+secrets.yml
+*.secret
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
