@@ -29,10 +29,30 @@ Please include the following information:
 - Validate and sanitize all user inputs
 - Use secure communication protocols (HTTPS, SSH)
 - Implement proper authentication and authorization
+- Use AES-256-GCM encryption for sensitive data at rest
+- Implement secure session management with token expiration
+- Enable secret scanning and Dependabot alerts
+
+## Mobile/App Security (Flutter)
+
+### Authentication
+- Hardware-bound key storage (keystore/Keychain)
+- 3-Level Security: PIN + Pattern + Seed
+- Biometric authentication integration
+
+### Data Protection
+- Encrypt local storage (Hive encrypted boxes)
+- Secure key management (flutter_secure_storage)
+- TLS 1.3 for network communication
+
+### P2P Security
+- End-to-end encryption for P2P connections
+- Certificate pinning for WebRTC
+- Verify peer identities before data exchange
 
 ## Dependencies
 
 We regularly scan for vulnerabilities in dependencies using:
-- npm audit
+- npm audit / flutter pub outdated
 - GitHub Dependabot
-- Snyk or similar tools
+- snyk or similar tools
