@@ -1,6 +1,12 @@
 // 🔷 THE PLATFORM - Core Constants
 // Security, Platform, and Feature Constants
 
+// Export new security services
+export 'security/encryption_service.dart';
+export 'security/hash_service.dart';
+export 'security/signing_service.dart';
+export 'security/anti_tamper_service.dart';
+
 /// ==========================================
 /// SECURITY CONSTANTS
 /// ==========================================
