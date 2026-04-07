@@ -1,0 +1,33 @@
+name: the_platform
+description: PINC Network - Decentralized platform for privacy, community sharing, and internet freedom.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  qr_flutter: ^4.1.0
+  crypto: ^3.0.3
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    
+  fonts:
+    - family: PINC
+      fonts:
+        - asset: assets/fonts/PINC-Regular.ttf
+        - asset: assets/fonts/PINC-Bold.ttf
+          weight: 700
